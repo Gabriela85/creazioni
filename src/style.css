@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  border: 2rem solid white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+header {
+  grid-column: 1/3;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+h1.main {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: left;
+  color: #955a47;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+}
+
+em {
+  opacity: 0;
+  transition: all 1s ease;
+  font-style: normal;
+}
+em.fade {
+  opacity: 1;
+}
+
+ul.menu {
+  line-height: 2;
+  text-align: left;
+}
+
+li.menu-steps {
+  display: inline;
+  padding: 1rem 2rem;
+  font-weight: 900;
+}
+
+a.a-menu {
+  color: #a56752;
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: all 800ms ease;
+}
+
+a.a-menu:hover {
+  background-color: #b1bd5d;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+picture {
+  grid-column: 1/3;
+  position: relative;
+  width: 100%;
+}
+
+.main-picture {
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button.book {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #b1bd5d;
+  color: white;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 900;
+  box-shadow: rgba(252, 250, 250, 0.35) 0px 5px 15px;
+  transition: all 800ms ease;
+  opacity: 90%;
+}
+
+button.book:hover {
+  background-color: rgb(241, 252, 92);
+  color: #955a47;
+}
+
+img.icon {
+  width: 5rem;
+  float: right;
+  transition: all 800ms ease;
+  padding-right: 1rem;
+}
+
+img.icon:hover {
+  opacity: 60%;
+}
+
+div.service {
+  background: #f0f0ef;
+  grid-column: 1/3;
+  padding: 0 2rem 2rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.special-service {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+img.service-icon {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+div.photos {
+  background: #f0f0ef;
+  grid-column: 1/3;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  min-height: 100vh
+  grid-gap:2rem;
+}
+
+img.container {
+}
+
+img.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.container img:hover {
+ color
+}
+
+a.follow {
+  text-decoration: none;
+  color: #36211a;
+  transition: all 800ms ease;
+  font-size: 2rem;
+  font-weight: 800;
+  float: right;
+  padding: 3rem;
+  background-color: #b1bd5d;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+a.follow:hover {
+  background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
+  color: #f0f0ef;
+}
+
+div.recension {
+  background: #f0f0ef;
+  grid-column: 1/3;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.they-say {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.8rem;
+  padding: 5rem;
+  text-align: justify;
+}
+
+img.customer {
+  border-radius: 80%;
+  width: 15rem;
+  display: block;
+  margin: 0 auto;
+}
+
+span.customer-description {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+div.price-list {
+  background: #f0f0ef;
+  grid-column: 1/2;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.prices {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+div.you-know {
+  grid-column: 2/3;
+  grid-row: 6/8;
+  background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.you-know-that {
+  font-size: 1.8rem;
+  text-align: justify;
+  color: #f0f0ef;
+}
+
+img.alfaparf {
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  border-radius: 8rem;
+}
+
+img.alfaparf:hover {
+  opacity: 80%;
+}
+
+h1.light {
+  color: #f0f0ef;
+}
+
+div.about-me {
+  background: #f0f0ef;
+  grid-column: 1/2;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.about-me {
+  text-align: justify;
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 2.4rem;
+  padding: 1rem 5rem 1rem 5rem;
+  color: #96614f;
+}
+
+div.horario {
+  background: #f0f0ef;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.hours {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+p.address {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 4rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #955a47;
+}
+
+span.title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2.4rem;
+  color: #955a47;
+  font-weight: 900;
+}
+
+img.portrait {
+  border-radius: 5%;
+  width: 30%;
+  float: left;
+  margin: 1.5rem;
+}
+
+img.salon {
+  border-radius: 5%;
+  width: 50%;
+  float: right;
+  margin: 1.5rem;
+}
+
+footer {
+  padding: 1%;
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #f0f0ef;
+  background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+a.GR {
+  text-decoration: none;
+  color: #f0f0ef;
+  transition: all 800ms ease;
+}
+
+a.GR:hover {
+  color: green;
+}
+
+/*.first-color { 
+	background: #f0f0ef; 
+}
+.second-color { 
+	background: #edd690; 
+}
+.third-color { 
+	background: #b1bd5d; 
+}
+.fourth-color { 
+	background: #955a47; */
