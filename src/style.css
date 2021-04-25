@@ -50,7 +50,7 @@ div.header-icons {
   padding-left: 20rem;
 }
 
-div.nav {
+nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -91,6 +91,17 @@ a.a-menu:hover {
 
 a.a-menu:active {
   text-decoration: underline;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 2.5rem;
+  height: 0.5rem;
+  background-color: #a56752;
+  margin: 0.3rem;
 }
 
 picture {
