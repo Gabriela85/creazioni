@@ -50,6 +50,10 @@ div.header-icons {
   padding-left: 20rem;
 }
 
+div header-icons img.icon {
+  width: 10rem;
+}
+
 nav {
   position: -webkit-sticky;
   position: sticky;
@@ -63,6 +67,10 @@ nav {
   z-index: 2;
   opacity: 85%;
   display: flex;
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
 
 ul.menu {
@@ -402,6 +410,10 @@ img.salon {
 
 img.salon:hover {
   transform: scale(1.2);
+}
+
+iframe {
+  padding: 2rem;
 }
 
 footer {
