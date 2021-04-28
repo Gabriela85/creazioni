@@ -7,8 +7,26 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
+h1 {
+  text-align: center;
+  padding: 4rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #955a47;
+  font-family: "Poiret One", cursive;
+}
+
+p {
+  line-height: 2.4rem;
+  font-weight: 700;
+  padding: 1rem 5rem 1rem 5rem;
+  color: #96614f;
+}
+
+/*the main div*/
 .container {
   width: 100%;
   height: auto;
@@ -40,6 +58,7 @@ em {
   transition: all 1s ease;
   font-style: normal;
   font-weight: 900;
+  font-family: "Poiret One", cursive;
 }
 
 em.fade {
@@ -48,12 +67,25 @@ em.fade {
 
 div.header-icons {
   padding-left: 20rem;
+  flex: 1 1 40rem;
 }
 
 div header-icons img.icon {
   width: 10rem;
 }
 
+img.icon {
+  width: 5rem;
+  float: right;
+  transition: all 800ms ease;
+  padding-right: 1rem;
+}
+
+img.icon:hover {
+  opacity: 60%;
+}
+
+/*the nav bar set up*/
 nav {
   position: -webkit-sticky;
   position: sticky;
@@ -67,6 +99,7 @@ nav {
   z-index: 2;
   opacity: 85%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-active {
@@ -75,11 +108,12 @@ nav {
 
 ul.menu {
   line-height: 2;
+  flex: 1 1 80rem;
 }
 
 li.menu-steps {
   display: inline;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   font-weight: 900;
 }
 
@@ -112,6 +146,7 @@ a.a-menu:active {
   margin: 0.3rem;
 }
 
+/*the main picture*/
 picture {
   grid-column: 1/3;
   position: relative;
@@ -148,21 +183,14 @@ button.book:hover {
   color: #955a47;
 }
 
-img.icon {
-  width: 5rem;
-  float: right;
-  transition: all 800ms ease;
-  padding-right: 1rem;
-}
+/*the service*/
 
-img.icon:hover {
-  opacity: 60%;
-}
-
-div.service {
+div.service,
+div.photos,
+div.recension {
   background: #f0f0ef;
   grid-column: 1/3;
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -179,12 +207,7 @@ img.service-icon {
   margin: 0 auto;
 }
 
-div.photos {
-  background: #f0f0ef;
-  grid-column: 1/3;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
+/*gallery*/
 
 div.gallery {
   display: grid;
@@ -222,12 +245,7 @@ a.follow:hover {
   color: #f0f0ef;
 }
 
-div.recension {
-  background: #f0f0ef;
-  grid-column: 1/3;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
+/*they say about me*/
 
 p.they-say {
   display: flex;
@@ -253,6 +271,8 @@ span.customer-description {
   font-weight: 900;
 }
 
+/*prices*/
+
 div.price-list {
   background: #f0f0ef;
   grid-column: 1/2;
@@ -265,6 +285,8 @@ p.prices {
   font-size: 1.8rem;
   line-height: 3rem;
 }
+
+/*side-section - did you know*/
 
 div.you-know {
   grid-column: 2/3;
@@ -294,6 +316,8 @@ img.alfaparf:hover {
 h1.light {
   color: #f0f0ef;
 }
+
+/*about me*/
 
 div.about-me {
   background: #f0f0ef;
@@ -338,42 +362,6 @@ span.contact-text {
   top: 1.7rem;
 }
 
-p {
-  line-height: 2.4rem;
-  padding: 1rem 5rem 1rem 5rem;
-  color: #96614f;
-}
-
-div.horario {
-  background: #f0f0ef;
-  grid-column: 1/3;
-  display: flex;
-  justify-content: center;
-  gap: 20rem;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-p.hours {
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-
-p.address {
-  text-align: center;
-  font-size: 1.8rem;
-}
-
-h1 {
-  text-align: center;
-  padding: 4rem;
-  font-size: 2.8rem;
-  font-weight: 900;
-  color: #955a47;
-  font-family: "Unica One";
-}
-
 span.title {
   text-align: center;
   padding: 1rem;
@@ -412,6 +400,31 @@ img.salon:hover {
   transform: scale(1.2);
 }
 
+/* horario*/
+
+div.horario {
+  background: #f0f0ef;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.hours {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+/*address + map*/
+
+p.address {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
 iframe {
   padding: 2rem;
 }
@@ -420,7 +433,7 @@ footer {
   padding: 1%;
   grid-column: 1/3;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: calc(1.4rem+1vw);
   font-weight: 900;
   color: #f0f0ef;
   background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);

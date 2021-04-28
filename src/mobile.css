@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 950px) {
   * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@
 
   /*if everything ok, defined by "<em>" via Javascript*/
   h1.main {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     text-align: left;
     color: #955a47;
@@ -55,6 +55,7 @@
   div.header-icons {
     padding-left: 0rem;
     width: 100%;
+    display: flex;
   }
 
   nav {
@@ -83,7 +84,6 @@
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    grid-column: initial;
   }
 
   .menu li {
@@ -94,7 +94,7 @@
     display: block;
     cursor: pointer;
     transition: all 800ms ease;
-    float: left;
+    float: right;
   }
 
   .burger:hover {
@@ -121,7 +121,7 @@
 
   picture {
     position: relative;
-    width: 100%;
+    height: 100%;
   }
 
   .main-picture {
@@ -214,16 +214,16 @@
   a.follow {
     text-decoration: none;
     color: #f0f0ef;
-    transition: all 800ms ease;
-    font-size: 2rem;
-    font-weight: 800;
-    float: right;
-    padding: 3rem;
     background-color: #b1bd5d;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 3rem;
+    margin: 2rem;
+    transition: all 800ms ease;
   }
 
   a.follow:hover {
@@ -390,7 +390,7 @@
   footer {
     padding: 1.5%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: calc(1.4rem + 1vw);
     font-weight: 900;
     color: #f0f0ef;
     background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
