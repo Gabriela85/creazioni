@@ -1,2 +1,26 @@
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1024px) {
+  p {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  nav {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  a.a-menu {
+    font-size: 1.8rem;
+  }
+  img.icon {
+    width: 3rem;
+  }
+
+  .follow {
+    margin: 2rem;
+  }
+
+  div.horario {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
