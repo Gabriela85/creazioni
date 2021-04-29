@@ -78,6 +78,7 @@
     height: 92vh;
     top: 8vh;
     background-color: #b1bd5d;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,4 +407,8 @@
   a.GR:hover {
     text-decoration: underline;
   }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }

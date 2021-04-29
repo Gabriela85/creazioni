@@ -47,7 +47,6 @@ h1.main {
   font-size: 4rem;
   font-weight: 900;
   text-align: left;
-  color: #955a47;
   margin: 0 1.5rem 1rem 1.5rem;
   padding-top: 1.5rem;
   width: 100%;
@@ -449,43 +448,6 @@ a.GR {
 
 a.GR:hover {
   text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  nav {
-    opacity: 90%;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #b1bd5d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 5;
-  }
-
-  .menu li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
