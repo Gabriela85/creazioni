@@ -77,14 +77,18 @@
     opacity: 80%;
   }
 
+  .dropdown-content a {
+    color: #955a47;
+  }
+
   .dropdown:hover .dropdown-content {
-    display: inline-flexbox;
+    display: grid;
+    opacity: 100%;
   }
 
   .dropdown-content a:hover {
-    padding: 0.1rem;
-    color: b1bd5d;
     background-color: #f0f0ef;
+    color: #955a47;
   }
 
   .main-picture {
