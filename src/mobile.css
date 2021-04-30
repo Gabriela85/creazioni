@@ -38,7 +38,7 @@
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 22vh;
+    top: 8vh;
     background-color: #b1bd5d;
     border-radius: 2rem;
     display: flex;
@@ -75,6 +75,16 @@
 
   .burger:hover {
     opacity: 80%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-flexbox;
+  }
+
+  .dropdown-content a:hover {
+    padding: 0.1rem;
+    color: b1bd5d;
+    background-color: #f0f0ef;
   }
 
   .main-picture {
