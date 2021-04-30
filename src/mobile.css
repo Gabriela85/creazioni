@@ -6,6 +6,7 @@
   .container {
     padding: 1rem;
     border: none;
+    grid-column: 1fr;
   }
 
   /*if everything ok, defined by "<em>" via Javascript*/
@@ -38,7 +39,7 @@
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 10vh;
     background-color: #b1bd5d;
     border-radius: 2rem;
     display: flex;
