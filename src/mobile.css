@@ -6,17 +6,24 @@
   .container {
     padding: 1rem;
     border: none;
-    grid-column: 1fr;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0rem;
   }
 
   /*if everything ok, defined by "<em>" via Javascript*/
   h1.main {
     font-size: 3rem;
     font-weight: 900;
-    text-align: left;
+    text-align: center;
     margin: 0 0.5rem 0.5rem 0.5rem;
     padding: 1.5rem 1rem 1rem 1rem;
     width: 100%;
+  }
+
+  em {
+    font-size: 3.5rem;
   }
 
   div.header-icons {
@@ -38,7 +45,7 @@
   .menu {
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 50vh;
     top: 10vh;
     background-color: #b1bd5d;
     border-radius: 2rem;
@@ -46,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: transform 0.5s ease-in;
   }
 
@@ -133,12 +140,14 @@
     flex-direction: column;
   }
 
-  img.service-icon {
-    width: 30%;
+  span.service1,
+  span.service2,
+  span.service3 {
+    width: 100%;
   }
 
-  div.gallery {
-    display: none;
+  img.service-icon {
+    width: 30%;
   }
 
   p {

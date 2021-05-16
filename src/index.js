@@ -55,3 +55,4 @@ burger.classList.toggle("animate");
         });
 }
 navSlide();
+
