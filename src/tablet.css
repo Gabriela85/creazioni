@@ -12,11 +12,15 @@
   }
 
   a.a-menu {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .follow {
     margin: 2rem;
+  }
+
+  div.side {
+    display: block;
   }
 
   div.horario {
