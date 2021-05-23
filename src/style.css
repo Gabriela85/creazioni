@@ -148,7 +148,10 @@ p {
   color: #f8f0ec;
 }
 
-div.header-icons {
+div.header-icons-mobile {
+  display: none;
+}
+div.header-icons-desktop {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -253,7 +256,7 @@ a.a-menu:active {
 .burger div {
   width: 2.5rem;
   height: 0.5rem;
-  background-color: rgb(240, 226, 218);
+  background-color: rgb(75, 38, 15);
   margin: 0.3rem;
   transition: all 0.3s ease;
 }

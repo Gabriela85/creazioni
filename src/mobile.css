@@ -3,15 +3,6 @@
     overflow-x: hidden;
   }
 
-  .container {
-    padding: 1rem;
-    border: none;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 0rem;
-  }
-
   h1.main {
     font-size: 3rem;
     font-weight: 900;
@@ -21,8 +12,24 @@
     width: 100%;
   }
 
-  div.header-icons {
-    padding-left: 0rem;
+  nav {
+    background: rgb(75, 38, 15);
+    background: linear-gradient(
+      126deg,
+      rgba(248, 240, 236, 1) 12%,
+      rgba(175, 90, 37, 1) 57%,
+      rgba(75, 38, 15, 1) 92%
+    );
+  }
+  div.header-icons-desktop {
+    display: none;
+  }
+
+  div.header-icons-mobile {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
   }
 
   img.icon {
@@ -41,12 +48,11 @@
     height: 50vh;
     top: 10vh;
     background-color: #af5a25;
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    transform: translateX(120%);
+    width: 100%;
+    opacity: 0%;
     transition: transform 0.5s ease-in;
   }
 
@@ -106,16 +112,14 @@
   }
 
   button.book-mobile {
-    display: block;
+    display: inline;
     position: absolute;
-    width: 40rem;
-
-    transform: translate(10%, -200%);
-    -ms-transform: translate(10%, 100%);
+    transform: translate(5%, -200%);
+    -ms-transform: translate(5%, 100%);
     background-color: #af5a25;
     color: #f8f0ec;
-    font-size: 3rem;
-    padding: 2rem 4rem;
+    font-size: 2rem;
+    padding: 2rem 8rem;
     border: white 1px solid;
     cursor: pointer;
     border-radius: 5px;
@@ -145,8 +149,9 @@
     color: #af5a25;
   }
 
-  .follow {
+  a.follow {
     margin-bottom: 15rem;
+    padding: 1.5rem;
   }
 
   p.special-service {
@@ -212,5 +217,5 @@
 }
 
 .nav-active {
-  transform: translateX(0%);
+  opacity: 100%;
 }
