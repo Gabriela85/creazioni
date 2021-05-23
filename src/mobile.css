@@ -12,7 +12,6 @@
     grid-gap: 0rem;
   }
 
-  /*if everything ok, defined by "<em>" via Javascript*/
   h1.main {
     font-size: 3rem;
     font-weight: 900;
@@ -22,18 +21,12 @@
     width: 100%;
   }
 
-  em {
-    font-size: 3.5rem;
-  }
-
   div.header-icons {
     padding-left: 0rem;
-    width: 100%;
-    display: flex;
   }
 
   img.icon {
-    width: 6rem;
+    width: 4rem;
   }
 
   nav {
@@ -47,7 +40,7 @@
     right: 0px;
     height: 50vh;
     top: 10vh;
-    background-color: #b1bd5d;
+    background-color: #af5a25;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -78,7 +71,7 @@
     display: block;
     cursor: pointer;
     transition: all 800ms ease;
-    float: right;
+    float: left;
   }
 
   .burger:hover {
@@ -108,11 +101,28 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 
-  button.book {
+  button.book-desktop {
+    display: none;
+  }
+
+  button.book-mobile {
+    display: block;
     position: absolute;
-    top: 80%;
-    left: 50%;
-    width: 100%;
+    width: 40rem;
+
+    transform: translate(10%, -200%);
+    -ms-transform: translate(10%, 100%);
+    background-color: #af5a25;
+    color: #f8f0ec;
+    font-size: 3rem;
+    padding: 2rem 4rem;
+    border: white 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 900;
+    box-shadow: rgba(248, 248, 246, 0.35) 0px 5px 15px;
+    transition: all 800ms ease;
+    opacity: 90%;
   }
 
   div.service,
@@ -126,13 +136,17 @@
     padding: 1rem;
   }
 
-  .follow {
-    margin: 2rem;
+  div.recension,
+  div.photos {
+    padding-bottom: 10rem;
   }
 
-  div.about-me,
-  div.price-list {
-    grid-column: 1/3;
+  #recensions {
+    color: #af5a25;
+  }
+
+  .follow {
+    margin-bottom: 15rem;
   }
 
   p.special-service {
@@ -164,10 +178,6 @@
     flex-direction: column;
   }
 
-  div.you-know {
-    grid-column: 1/3;
-  }
-
   img.alfaparf {
     float: left;
     width: 100%;
@@ -197,7 +207,7 @@
   }
 
   footer {
-    font-size: calc(1.2rem + 1vw);
+    font-size: calc(0.8rem + 1vw);
   }
 }
 

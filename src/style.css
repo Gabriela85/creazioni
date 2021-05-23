@@ -219,7 +219,7 @@ a.a-menu:active {
   display: none;
   margin-top: 0.2rem;
   position: absolute;
-  background-color: #f0f0ef;
+  background-color: #f8f0ec;
   color: rgb(188, 202, 202);
   min-width: 16rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -253,7 +253,7 @@ a.a-menu:active {
 .burger div {
   width: 2.5rem;
   height: 0.5rem;
-  background-color: #a56752;
+  background-color: rgb(240, 226, 218);
   margin: 0.3rem;
   transition: all 0.3s ease;
 }
@@ -278,11 +278,15 @@ picture {
 
 div.logo {
   position: absolute;
-  top: -4000%;
+  top: -3500%;
   left: 30%;
 }
 
-button.book {
+button.book-mobile {
+  display: none;
+}
+
+button.book-desktop {
   position: absolute;
   top: -700%;
   left: 20%;
@@ -301,7 +305,8 @@ button.book {
   opacity: 90%;
 }
 
-button.book:hover {
+button.book-desktop,
+button.book-mobile:hover {
   border: #f8f0ec 4px solid;
 }
 
@@ -523,10 +528,6 @@ img.alfaparf:hover {
   opacity: 80%;
 }
 
-h1.light {
-  color: #f0f0ec;
-}
-
 /* horario*/
 
 div.horario {
@@ -600,7 +601,7 @@ a.GR:hover {
 /*burger transformation*/
 .animate .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #af5a25;
+  background-color: rgb(75, 38, 15);
 }
 
 .animate .line2 {
@@ -609,5 +610,5 @@ a.GR:hover {
 
 .animate .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: #af5a25;
+  background-color: rgb(75, 38, 15);
 }
