@@ -359,15 +359,39 @@ div.photos {
   box-shadow: rgba(117, 54, 2, 0.16) 0px 3px 6px,
     rgba(98, 68, 5, 0.23) 0px 3px 6px;
 }
-div.gallery {
+
+.photos img {
+  width: 15vw;
+  margin-right: 15px;
+  transition: all 800ms ease;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+}
+
+div.long-hair {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.gallery img {
-  width: 40vw;
-  margin-right: 15px;
+div.medium-hair {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.short-hair {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.man-hair {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 a.follow {
