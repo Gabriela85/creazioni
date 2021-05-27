@@ -35,7 +35,7 @@
     padding: 5rem 10rem 10rem 10rem;
   }
 
-  .photos img {
+  div.photos div img {
     width: 30vw;
     margin-right: 15px;
     transition: all 800ms ease;
