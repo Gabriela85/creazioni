@@ -336,7 +336,7 @@ p.special-service {
   display: flex;
   gap: 10rem;
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: left;
 }
 
 span.service1,
@@ -557,8 +557,12 @@ div.you-know {
 
 p.you-know-that {
   font-size: 1.8rem;
-  text-align: justify;
+  text-align: left;
   color: #f0f0ef;
+}
+
+h1.light {
+  font-size: 2rem;
 }
 
 img.alfaparf {
