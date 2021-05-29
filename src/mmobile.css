@@ -1,0 +1,8 @@
+@media only screen and (max-width: 261px) {
+  div.logo-mobile {
+    display: block;
+    position: absolute;
+    top: -10rem;
+    left: 4rem;
+  }
+}
