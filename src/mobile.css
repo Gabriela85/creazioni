@@ -242,6 +242,10 @@
     opacity: 90%;
   }
 
+  button.book-mobile:hover {
+    border: #f8f0ec 4px solid;
+  }
+
   div.service,
   div.photos,
   div.recension,
@@ -317,9 +321,12 @@
     width: 100%;
   }
 
+  img.swipe {
+    width: 10%;
+  }
+
   img.salon {
     border-radius: 2%;
-    width: 100%;
   }
 
   div.horario {
