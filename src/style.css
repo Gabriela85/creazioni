@@ -332,17 +332,17 @@ div.recension {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+span.service1,
+span.service2,
+span.service3 {
+  width: 30%;
+}
+
 p.special-service {
   display: flex;
   gap: 10rem;
   font-size: 1.8rem;
   text-align: left;
-}
-
-span.service1,
-span.service2,
-span.service3 {
-  width: 30%;
 }
 
 img.service-icon {
@@ -455,16 +455,18 @@ span.customer-description {
 /*side - for flex*/
 
 div.side {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 /*about me*/
 
 div.about-me {
-  flex-grow: 2;
-  order: 1;
+  grid-column: 1/3;
+  grid-row: 1/2;
   background: #f8f0ec;
-
   padding: 5rem 10rem 10rem 10rem;
   box-shadow: rgba(117, 54, 2, 0.16) 0px 3px 6px,
     rgba(98, 68, 5, 0.23) 0px 3px 6px;
@@ -530,9 +532,14 @@ img.portrait:hover {
   transform: scale(1.2);
 }
 
-img.salon {
-  border-radius: 5%;
-  width: 50%;
+div.photos-salon {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.photos-salon img {
+  height: 40rem;
   float: right;
   margin: 1.5rem;
   transition: all 800ms ease;
@@ -541,17 +548,13 @@ img.salon {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-img.salon:hover {
-  transform: scale(1.2);
-}
-
 /*side-section - did you know*/
 
 div.you-know {
-  flex-grow: 1;
-  order: 2;
+  grid-column: 3/4;
+  grid-row: 1/2;
   background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -562,7 +565,7 @@ p.you-know-that {
 }
 
 h1.light {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 img.alfaparf {
@@ -598,7 +601,8 @@ p.address {
 
 #horario,
 #galleria,
-#about-me {
+#about-me,
+#reserva {
   color: #af5a25;
 }
 

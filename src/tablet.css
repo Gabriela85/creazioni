@@ -31,8 +31,8 @@
     margin-bottom: 5rem;
   }
 
-  div.you-know {
-    padding: 5rem 10rem 10rem 10rem;
+  img.salon {
+    margin: 2rem;
   }
 
   div.photos div img {
@@ -41,17 +41,25 @@
     transition: all 800ms ease;
   }
 
-  div.side {
-    display: block;
+  div.you-know,
+  div.about-me {
+    grid-column: 1/4;
+  }
+
+  div.you-know {
+    grid-row: 2/3;
+  }
+
+  div.about-me {
+    grid-row: 1/2;
   }
 
   img.alfaparf {
     width: 40%;
-    float: left;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding: 2rem;
     border-radius: 5rem;
-    margin: 1.5rem;
+    margin: 1rem;
+    display: block;
   }
 
   div.horario {

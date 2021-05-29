@@ -33,4 +33,3 @@ burger.classList.toggle("animate");
 }
 navSlide();
 
-//cookies alert
