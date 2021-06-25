@@ -331,10 +331,6 @@ div.recension {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-div.recensions {
-  padding: 5rem 10rem 10rem 10rem;
-}
-
 div.service {
   padding: 0rem;
 }
@@ -460,6 +456,10 @@ img.icon-button {
 }
 
 /*they say about me*/
+
+div.recension {
+  padding: 5rem 10rem 10rem 10rem;
+}
 
 p.they-say {
   display: flex;
