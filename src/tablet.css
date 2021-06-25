@@ -15,12 +15,23 @@
     font-size: 1.6rem;
   }
 
-  div.service {
-    padding: 5rem 0rem 10rem 0rem;
-  }
   p.special-service {
     flex-direction: column;
     align-items: center;
+  }
+
+  span.service1,
+  span.service2,
+  span.service3 {
+    width: 50vw;
+    padding: 2rem;
+  }
+
+  span.color,
+  span.cut,
+  span.treatment {
+    border: none;
+    margin: 1rem;
   }
 
   p.they-say {

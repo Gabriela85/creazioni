@@ -257,6 +257,12 @@
     padding: 1rem;
   }
 
+  span.service1,
+  span.service2,
+  span.service3 {
+    padding: 2rem;
+  }
+
   div.recension,
   div.photos {
     padding-bottom: 10rem;
@@ -283,7 +289,7 @@
   span.service1,
   span.service2,
   span.service3 {
-    width: 100%;
+    width: 50vw;
   }
 
   img.service-icon {

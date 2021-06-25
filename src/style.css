@@ -327,21 +327,55 @@ div.recension {
     rgba(175, 90, 37, 1) 57%,
     rgba(248, 240, 236, 1) 92%
   );
-  padding: 5rem 10rem 10rem 10rem;
+
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+div.recensions {
+  padding: 5rem 10rem 10rem 10rem;
+}
+
+div.service {
+  padding: 0rem;
+}
+
+#my-service {
+  padding: 0rem;
 }
 
 span.service1,
 span.service2,
 span.service3 {
-  width: 30%;
+  display: inline-block;
+  width: 30vw;
+}
+
+span.color {
+  background-image: url("../img/good-color.jpg");
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border: white 1px solid;
+}
+
+span.cut {
+  background-image: url("../img/good-cut.jpg");
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border: white 1px solid;
+}
+
+span.treatment {
+  background-image: url("../img/good-treatment.jpg");
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border: white 1px solid;
 }
 
 p.special-service {
   display: flex;
-  gap: 10rem;
   font-size: 1.8rem;
   text-align: left;
+  padding: 0rem;
 }
 
 img.service-icon {
