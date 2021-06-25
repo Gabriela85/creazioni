@@ -344,6 +344,7 @@ span.service2,
 span.service3 {
   display: inline-block;
   width: 30vw;
+  padding-top: 5rem;
 }
 
 span.color {
