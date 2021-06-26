@@ -209,6 +209,7 @@ nav {
 li.menu-steps {
   display: inline;
   font-weight: 900;
+  padding-right: 1rem;
 }
 
 a.a-menu {
@@ -350,6 +351,7 @@ span.service3 {
 span.color {
   background-image: url("../img/good-color.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem;
   border: white 1px solid;
 }
@@ -357,6 +359,8 @@ span.color {
 span.cut {
   background-image: url("../img/good-cut.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
   padding: 2rem;
   border: white 1px solid;
 }
@@ -364,6 +368,8 @@ span.cut {
 span.treatment {
   background-image: url("../img/good-treatment.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
   padding: 2rem;
   border: white 1px solid;
 }
