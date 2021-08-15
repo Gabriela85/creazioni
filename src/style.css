@@ -390,7 +390,7 @@ img.service-icon {
 /*gallery*/
 
 div.photos {
-  background: #f8f0ec;
+  background-image: linear-gradient(-60deg, #e9f1e7 10%, #c9effb 100%);
   padding: 5rem 10rem 10rem 10rem;
   box-shadow: rgba(117, 54, 2, 0.16) 0px 3px 6px,
     rgba(98, 68, 5, 0.23) 0px 3px 6px;
@@ -502,7 +502,7 @@ div.side {
 /*side-section - did you know*/
 
 div.you-know {
-  background-image: linear-gradient(-60deg, #ffffff 0%, #8cf58c 100%);
+  background-image: linear-gradient(-60deg, #e9f1e7 10%, #c9effb 100%);
   padding: 1rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -626,7 +626,7 @@ div.photos-salon img {
 /* horario*/
 
 div.horario {
-  background: #f8f0ec;
+  background-image: linear-gradient(-60deg, #e9f1e7 10%, #c9effb 100%);
   display: flex;
   justify-content: center;
   gap: 20rem;
