@@ -47,10 +47,19 @@
   }
 
   div.logo-mobile {
-    display: block;
     position: absolute;
+    display: block;
     top: 4rem;
     left: 4rem;
+  }
+
+  @-moz-document url-prefix() {
+    div.logo-mobile {
+      position: absolute;
+      display: block;
+      left: -30%;
+      top: -2500%;
+    }
   }
 
   #logo-mob {
@@ -242,8 +251,20 @@
     opacity: 90%;
   }
 
+  @-moz-document url-prefix() {
+    button.book-mobile {
+      position: absolute;
+      top: 140vw;
+    }
+  }
+
   button.book-mobile:hover {
     border: #f8f0ec 4px solid;
+  }
+
+  div.side {
+    display: block;
+    width: 100%;
   }
 
   div.service,
@@ -309,19 +330,20 @@
   p.they-say {
     font-size: 1.8rem;
     padding: 2rem 2rem 3rem 2rem;
-
     gap: 4rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
   }
 
+  #notmobile {
+    display: none;
+  }
+
   img.alfaparf {
-    float: left;
     width: 100%;
     cursor: pointer;
     padding: 2rem;
-    float: left;
   }
 
   .contact-text {

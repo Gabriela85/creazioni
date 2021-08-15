@@ -59,25 +59,20 @@
     transition: all 800ms ease;
   }
 
-  div.you-know,
-  div.about-me {
-    grid-column: 1/4;
-  }
-
-  div.you-know {
-    grid-row: 2/3;
-  }
-
-  div.about-me {
-    grid-row: 1/2;
+  div.side {
+    width: 70%;
   }
 
   img.alfaparf {
-    width: 40%;
+    width: 80%;
     padding: 2rem;
     border-radius: 5rem;
     margin: 1rem;
     display: block;
+  }
+
+  img.portrait {
+    width: 40%;
   }
 
   div.horario {

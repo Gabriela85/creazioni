@@ -495,17 +495,45 @@ span.customer-description {
 /*side - for flex*/
 
 div.side {
+  width: 80%;
+  display: flex;
+}
+
+/*side-section - did you know*/
+
+div.you-know {
+  background-image: linear-gradient(-60deg, #ffffff 0%, #8cf58c 100%);
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+p.you-know-that {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  color: #9a5f49;
+}
+
+div.you-know h1 {
+  color: #9a5f49;
+  padding-top: 8rem;
+}
+
+img.alfaparf {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  border-radius: 8rem;
+}
+
+img.alfaparf:hover {
+  opacity: 80%;
 }
 
 /*about me*/
 
 div.about-me {
-  grid-column: 1/3;
-  grid-row: 1/2;
+  width: 100%;
   background: #f8f0ec;
   padding: 5rem 10rem 10rem 10rem;
   box-shadow: rgba(117, 54, 2, 0.16) 0px 3px 6px,
@@ -513,7 +541,7 @@ div.about-me {
 }
 
 p.about-me {
-  text-align: justify;
+  text-align: left;
   font-size: 1.8rem;
   color: #af5a25;
 }
@@ -549,17 +577,9 @@ span.contact-text {
   color: #af5a25;
 }
 
-span.title {
-  text-align: center;
-  padding: 1rem;
-  font-size: 2.4rem;
-  color: #f8f0ec;
-  font-weight: 900;
-}
-
 img.portrait {
   border-radius: 5%;
-  width: 30%;
+  width: 20%;
   float: left;
   margin: 1.5rem;
   transition: all 800ms ease;
@@ -601,37 +621,6 @@ div.photos-salon img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-
-/*side-section - did you know*/
-
-div.you-know {
-  grid-column: 3/4;
-  grid-row: 1/2;
-  background-image: linear-gradient(-60deg, #cca395 0%, #955a47 100%);
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-p.you-know-that {
-  font-size: 1.8rem;
-  text-align: left;
-  color: #f0f0ef;
-}
-
-h1.light {
-  font-size: 2.8rem;
-}
-
-img.alfaparf {
-  width: 100%;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  border-radius: 8rem;
-}
-
-img.alfaparf:hover {
-  opacity: 80%;
 }
 
 /* horario*/
