@@ -291,6 +291,7 @@
 
   div.photos div img {
     width: 50vw;
+    height: 65vw;
   }
 
   #recensions {
