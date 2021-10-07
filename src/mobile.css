@@ -375,8 +375,8 @@
   }
 }
 
-@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
-  @media {
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
     div.logo-mobile {
       display: none;
     }
