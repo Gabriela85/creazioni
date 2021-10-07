@@ -487,6 +487,16 @@ p.they-say {
   text-align: justify;
 }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    span.they-say1,
+    span.they-say2,
+    span.they-say3 {
+      margin: 5rem;
+    }
+  }
+}
+
 img.customer {
   border-radius: 80%;
   width: 10rem;
