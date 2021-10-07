@@ -412,6 +412,11 @@ img.swipe {
   height: auto;
 }
 
+img.icon-button {
+  width: 5rem;
+  height: auto;
+}
+
 .photos img:hover {
   transform: scale(1.1);
 }
