@@ -55,7 +55,7 @@
 
   div.photos div img {
     width: 30vw;
-    max-height: vw;
+    max-height: 35vw;
     margin-right: 15px;
     transition: all 800ms ease;
   }
