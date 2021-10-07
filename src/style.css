@@ -407,6 +407,11 @@ div.photos div {
   transition: all 800ms ease;
 }
 
+img.swipe {
+  width: 5rem;
+  height: auto;
+}
+
 .photos img:hover {
   transform: scale(1.1);
 }
